@@ -43,7 +43,7 @@ function updateSlider() {
     updateDots();
 }
 
-function shoeNextSlide() {
+function showNextSlide() {
     if(currentIndex < (sliderLength - 1)) {
         currentIndex++;
     }
@@ -80,7 +80,7 @@ function updateDots() {
 showSlider();
 
 document.querySelector('.next').addEventListener('click', () => {
-    shoeNextSlide();
+    showNextSlide();
 });
 
 document.querySelector('.prev').addEventListener('click', () => {
